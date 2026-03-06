@@ -12,9 +12,12 @@
           sessionStorage.removeItem("redirect");
           history.replaceState(null, "", redirect);
         }
+        if (localStorage.getItem("theme") === "light") {
+          document.documentElement.classList.add("light");
+        }
       })();
     </script>
-    <script type="module" crossorigin src="/brandon-portfolio/assets/index-DivTEnpy.js"></script>
+    <script type="module" crossorigin src="/brandon-portfolio/assets/index-Bvugix-v.js"></script>
     <link rel="modulepreload" crossorigin href="/brandon-portfolio/assets/motion-CR4epojX.js">
     <link rel="stylesheet" crossorigin href="/brandon-portfolio/assets/index-D3uBklD9.css">
   </head>
