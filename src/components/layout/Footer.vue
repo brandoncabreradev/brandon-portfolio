@@ -35,22 +35,53 @@ const socials = [
         id="footer-grid"
       >
         <!-- Brand -->
-        <div>
+        <div style="display: flex; flex-direction: column; gap: 12px">
           <RouterLink
             to="/"
             style="
               font-family: var(--font-mono);
-              font-weight: 500;
+              font-weight: 700;
               font-size: 16px;
               color: var(--text);
               text-decoration: none;
               display: inline-flex;
               align-items: center;
               gap: 4px;
-              margin-bottom: 12px;
             "
           >
+            Brandon Cabrera
           </RouterLink>
+          <div style="display: inline-flex; align-items: center; gap: 0">
+            <span
+              style="
+                font-family: var(--font-mono);
+                font-size: 11px;
+                font-weight: 500;
+                color: var(--accent);
+                background: rgba(110, 231, 183, 0.08);
+                border: 1px solid rgba(110, 231, 183, 0.2);
+                border-right: none;
+                padding: 3px 10px;
+                border-radius: 6px 0 0 6px;
+                letter-spacing: 0.04em;
+              "
+              >Frontend</span
+            >
+            <span
+              style="
+                font-family: var(--font-mono);
+                font-size: 11px;
+                font-weight: 500;
+                color: var(--text-2);
+                background: var(--bg-hover);
+                border: 1px solid var(--border);
+                padding: 3px 10px;
+                border-radius: 0 6px 6px 0;
+                letter-spacing: 0.04em;
+              "
+              >Backend</span
+            >
+          </div>
         </div>
 
         <!-- Nav -->

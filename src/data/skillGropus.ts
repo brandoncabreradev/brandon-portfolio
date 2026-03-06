@@ -39,8 +39,7 @@ export const skillGroups = [
     skills: [
       { name: "Git / GitHub", level: 90 },
       { name: "Docker", level: 72 },
-      { name: "AWS", level: 65 },
-      { name: "CircleCI", level: 60 },
+      { name: "AWS", level: 40 },
       { name: "Chart.js", level: 75 },
     ],
   },

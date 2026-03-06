@@ -15,6 +15,12 @@ const routes = [
     meta: { title: "Sobre mí" },
   },
   {
+    path: "/habilidades",
+    name: "skills",
+    component: () => import("../views/SkillsView.vue"),
+    meta: { title: "Habilidades" },
+  },
+  {
     path: "/:pathMatch(.*)*",
     name: "not-found",
     component: () => import("../views/NotFoundView.vue"),
