@@ -14,16 +14,10 @@ const routes = [
     component: () => import("../views/AboutView.vue"),
     meta: { title: "Sobre mí" },
   },
-  {
-    path: "/habilidades",
-    name: "skills",
-    component: () => import("../views/SkillsView.vue"),
-    meta: { title: "Habilidades" },
-  },
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) return savedPosition;

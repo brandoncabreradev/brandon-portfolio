@@ -280,7 +280,7 @@ onUnmounted(() => clearInterval(roleTimer));
                   color: var(--text-3);
                   margin-left: 8px;
                 "
-                >brandon.ts</span
+                >brandon.json</span
               >
             </div>
 
@@ -292,63 +292,32 @@ onUnmounted(() => clearInterval(roleTimer));
                 line-height: 2;
               "
             >
-              <p>
-                <span style="color: var(--accent-2)">const</span>
-                <span style="color: var(--text)"> developer</span>
-                <span style="color: var(--text-3)">:</span>
-                <span style="color: var(--text)">DeveloperProfile</span>
-                <span style="color: var(--text-3)">=</span>
-                <span style="color: var(--text-3)">{</span>
-              </p>
+              <p><span style="color: var(--text-3)">{</span></p>
 
               <p style="padding-left: 20px">
-                <span style="color: var(--accent-2)">name</span
+                <span style="color: var(--accent-2)">"name"</span
                 ><span style="color: var(--text-3)">:</span>
-                <span style="color: #fbbf24">"Brandon Cabrera"</span
+                <span style="color: #fbbf24"> "Brandon Cabrera"</span
                 ><span style="color: var(--text-3)">,</span>
               </p>
 
               <p style="padding-left: 20px">
-                <span style="color: var(--accent-2)">role</span
+                <span style="color: var(--accent-2)">"role"</span
                 ><span style="color: var(--text-3)">:</span>
-                <span style="color: #fbbf24">"Full Stack Developer"</span
+                <span style="color: #fbbf24"> "Full Stack Developer"</span
                 ><span style="color: var(--text-3)">,</span>
               </p>
 
               <p style="padding-left: 20px">
-                <span style="color: var(--accent-2)">experience</span
+                <span style="color: var(--accent-2)">"experience"</span
                 ><span style="color: var(--text-3)">:</span>
-                <span style="color: #fbbf24">"5+ years"</span
+                <span style="color: #fbbf24"> "4+ años"</span
                 ><span style="color: var(--text-3)">,</span>
               </p>
 
               <p style="padding-left: 20px">
-                <span style="color: var(--accent-2)">focus</span
-                ><span style="color: var(--text-3)">:</span>
-                <span style="color: #fbbf24"
-                  >"Backend (Node.js/NestJS) + Enterprise Systems"</span
-                ><span style="color: var(--text-3)">,</span>
-              </p>
-
-              <p style="padding-left: 40px">
-                <span style="color: #fbbf24">"HR & Payroll"</span
-                ><span style="color: var(--text-3)">,</span>
-                <span style="color: #fbbf24">"Vacation & Permissions"</span
-                ><span style="color: var(--text-3)">,</span>
-              </p>
-
-              <p style="padding-left: 40px">
-                <span style="color: #fbbf24">"Admin Dashboards"</span>
-              </p>
-
-              <p style="padding-left: 20px">
-                <span style="color: var(--text-3)">],</span>
-              </p>
-
-              <p style="padding-left: 20px">
-                <span style="color: var(--accent-2)">stack</span
-                ><span style="color: var(--text-3)">:</span>
-                <span style="color: var(--text-3)">[</span>
+                <span style="color: var(--accent-2)">"stack"</span
+                ><span style="color: var(--text-3)">: [</span>
               </p>
 
               <p style="padding-left: 40px">
@@ -363,9 +332,7 @@ onUnmounted(() => clearInterval(roleTimer));
               <p style="padding-left: 40px">
                 <span style="color: #fbbf24">"Vue 3"</span
                 ><span style="color: var(--text-3)">,</span>
-                <span style="color: #fbbf24">"React"</span
-                ><span style="color: var(--text-3)">,</span>
-                <span style="color: #fbbf24">"MySQL/PostgreSQL"</span>
+                <span style="color: #fbbf24">"MySQL"</span>
               </p>
 
               <p style="padding-left: 20px">
@@ -373,16 +340,16 @@ onUnmounted(() => clearInterval(roleTimer));
               </p>
 
               <p style="padding-left: 20px">
-                <span style="color: var(--accent-2)">tools</span
-                ><span style="color: var(--text-3)">:</span>
-                <span style="color: var(--text-3)">[</span>
+                <span style="color: var(--accent-2)">"tools"</span
+                ><span style="color: var(--text-3)">: [</span>
                 <span style="color: #fbbf24">"Docker"</span
                 ><span style="color: var(--text-3)">,</span>
                 <span style="color: #fbbf24">"Git"</span
                 ><span style="color: var(--text-3)">,</span>
                 <span style="color: #fbbf24">"Postman"</span
-                ><span style="color: var(--text-3)">],</span>
+                ><span style="color: var(--text-3)">]</span>
               </p>
+
               <p><span style="color: var(--text-3)">}</span></p>
             </div>
 
