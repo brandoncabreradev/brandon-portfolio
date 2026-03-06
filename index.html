@@ -12,6 +12,9 @@
           sessionStorage.removeItem("redirect");
           history.replaceState(null, "", redirect);
         }
+        if (localStorage.getItem("theme") === "light") {
+          document.documentElement.classList.add("light");
+        }
       })();
     </script>
   </head>

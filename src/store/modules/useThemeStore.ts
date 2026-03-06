@@ -1,11 +1,15 @@
-import { ref, watchEffect } from "vue";
+import { ref, watch } from "vue";
 
 const isDark = ref(localStorage.getItem("theme") !== "light");
 
-watchEffect(() => {
-  document.documentElement.classList.toggle("light", !isDark.value);
-  localStorage.setItem("theme", isDark.value ? "dark" : "light");
-});
+watch(
+  isDark,
+  (val) => {
+    document.documentElement.classList.toggle("light", !val);
+    localStorage.setItem("theme", val ? "dark" : "light");
+  },
+  { immediate: false },
+);
 
 export function useThemeStore() {
   function toggle() {

@@ -14,6 +14,12 @@ const routes = [
     component: () => import("../views/AboutView.vue"),
     meta: { title: "Sobre mí" },
   },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "not-found",
+    component: () => import("../views/NotFoundView.vue"),
+    meta: { title: "Página no encontrada" },
+  },
 ];
 
 const router = createRouter({
