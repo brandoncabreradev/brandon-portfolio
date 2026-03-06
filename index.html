@@ -5,7 +5,16 @@
     <link rel="icon" type="image/svg+xml" href="/brandon-portfolio/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>brandon-portfolio</title>
-    <script type="module" crossorigin src="/brandon-portfolio/assets/index-CGcECEha.js"></script>
+    <script>
+      (function () {
+        const redirect = sessionStorage.getItem("redirect");
+        if (redirect) {
+          sessionStorage.removeItem("redirect");
+          history.replaceState(null, "", redirect);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/brandon-portfolio/assets/index-DivTEnpy.js"></script>
     <link rel="modulepreload" crossorigin href="/brandon-portfolio/assets/motion-CR4epojX.js">
     <link rel="stylesheet" crossorigin href="/brandon-portfolio/assets/index-D3uBklD9.css">
   </head>
