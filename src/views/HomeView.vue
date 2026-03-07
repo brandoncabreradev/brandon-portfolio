@@ -1,6 +1,11 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, computed, onMounted, onUnmounted } from "vue";
 import { animate, stagger } from "motion";
+import { techStack } from "@/data/skillGropus.ts";
+import { projects } from "@/data/projects.ts";
+
+const techCount = computed(() => techStack.length);
+const projectCount = computed(() => projects.length);
 
 const roles = [
   "Full Stack Developer",
@@ -185,7 +190,7 @@ onUnmounted(() => clearInterval(roleTimer));
                   line-height: 1;
                 "
               >
-                5+
+                {{ projectCount }}+
               </p>
               <p style="font-size: 12px; color: var(--text-3); margin-top: 4px">
                 Proyectos
@@ -201,7 +206,7 @@ onUnmounted(() => clearInterval(roleTimer));
                   line-height: 1;
                 "
               >
-                5+
+                4+
               </p>
               <p style="font-size: 12px; color: var(--text-3); margin-top: 4px">
                 Años exp.
@@ -217,7 +222,7 @@ onUnmounted(() => clearInterval(roleTimer));
                   line-height: 1;
                 "
               >
-                10+
+                {{ techCount }}+
               </p>
               <p style="font-size: 12px; color: var(--text-3); margin-top: 4px">
                 Tecnologías

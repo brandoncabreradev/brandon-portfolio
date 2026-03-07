@@ -21,6 +21,18 @@ const routes = [
     meta: { title: "Habilidades" },
   },
   {
+    path: "/proyectos",
+    name: "projects",
+    component: () => import("../views/ProjectsView.vue"),
+    meta: { title: "Proyectos" },
+  },
+  {
+    path: "/contacto",
+    name: "contact",
+    component: () => import("../views/ContactView.vue"),
+    meta: { title: "Contacto" },
+  },
+  {
     path: "/:pathMatch(.*)*",
     name: "not-found",
     component: () => import("../views/NotFoundView.vue"),

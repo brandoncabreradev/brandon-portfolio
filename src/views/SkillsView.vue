@@ -2,26 +2,11 @@
 import { ref, onMounted } from "vue";
 import { animate, inView, stagger } from "motion";
 import SkillBadge from "@/components/ui/SkillBadge.vue";
-import { skillGroups } from "@/data/skillGropus.ts";
+import { skillGroups, techStack } from "@/data/skillGropus.ts";
 
 const headerEl = ref(null);
 const techEl = ref(null);
 const groupEls = ref([]);
-
-const techStack = [
-  { name: "Vue.js", color: "#42b883" },
-  { name: "TypeScript", color: "#3178c6" },
-  { name: "JavaScript", color: "#f7df1e" },
-  { name: "Node.js", color: "#68a063" },
-  { name: "NestJS", color: "#e0234e" },
-  { name: "Bootstrap", color: "#7952b3" },
-  { name: "MySQL", color: "#4479a1" },
-  { name: "PostgreSQL", color: "#336791" },
-  { name: "MongoDB", color: "#47a248" },
-  { name: "Redis", color: "#dc382d" },
-  { name: "Docker", color: "#2496ed" },
-  { name: "Git", color: "#f05032" },
-];
 
 onMounted(() => {
   if (headerEl.value)

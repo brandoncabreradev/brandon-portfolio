@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted } from "vue";
+import meImg from "@/assets/img/Me.png";
 import { animate, inView, stagger } from "motion";
 
 const headerEl = ref(null);
@@ -10,11 +11,11 @@ const valuesEl = ref(null);
 
 const highlights = [
   {
-    text: "Especializado en Node.js, NestJS, Vue.js y React",
+    text: "Especializado en Node.js, NestJS, Vue.js",
     svg: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/><path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/><path d="M12 2v2"/><path d="M12 22v-2"/><path d="m17 20.66-1-1.73"/><path d="M11 10.27 7 3.34"/><path d="m20.66 17-1.73-1"/><path d="m3.34 7 1.73 1"/><path d="M14 12h8"/><path d="M2 12h2"/><path d="m20.66 7-1.73 1"/><path d="m3.34 17 1.73-1"/><path d="m17 3.34-1 1.73"/><path d="m11 13.73-4 6.93"/></svg>`,
   },
   {
-    text: "Desarrollo de sistemas de Recursos Humanos y Nómina",
+    text: "Desarrollo de sistemas competitivos y escalables",
     svg: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>`,
   },
   {
@@ -143,17 +144,17 @@ onMounted(() => {
                 position: relative;
               "
             >
-              <!-- Initials placeholder -->
-              <span
+              <!-- Photo -->
+              <img
+                :src="meImg"
+                alt="Brandon Cabrera"
                 style="
-                  font-family: var(--font-sans);
-                  font-weight: 800;
-                  font-size: 80px;
-                  color: var(--border-2);
-                  user-select: none;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: center top;
                 "
-                >BC</span
-              >
+              />
               <!-- Bottom gradient -->
               <div
                 style="
@@ -243,19 +244,24 @@ onMounted(() => {
           >
             Full Stack Developer enfocado en el
             <span style="color: var(--accent)"
-              >desarrollo de software empresarial</span
+              >desarrollo de software empresariales</span
             >
-            y APIs escalables con arquitectura modular.
+            y APIs escalables.
           </p>
 
           <div class="divider"></div>
 
           <p style="font-size: 15px; line-height: 1.8; color: var(--text-2)">
-            Me especializo en
-            <strong style="color: var(--text)"
-              >Node.js, NestJS, Vue.js y MySQL</strong
-            >, con experiencia en arquitectura modular, APIs REST y sistemas de
-            Recursos Humanos y Nómina.
+            Trabajo principalmente con
+            <strong style="color: var(--text)">Node.js, NestJS y Vue.js</strong
+            >, construyendo
+            <strong style="color: var(--text)">APIs robustas <br /></strong> y
+            soluciones efectivas. Sobre bases de datos
+            <strong style="color: var(--text)">(MySQL/PostgreSQL)</strong>. Me
+            enfoco en arquitecturas bien estructuradas
+            <strong style="color: var(--text)">(modular/microservicios)</strong
+            >, el rendimiento y un código limpio que sea fácil de mantener y
+            escalar.
           </p>
 
           <!-- Highlights list -->
@@ -320,21 +326,6 @@ onMounted(() => {
               </p>
               <p style="font-weight: 600; font-size: 14px; color: var(--text)">
                 Remoto / Híbrido
-              </p>
-            </div>
-            <div class="card" style="padding: 16px; border-radius: 10px">
-              <p
-                style="
-                  font-size: 11px;
-                  color: var(--text-3);
-                  margin-bottom: 4px;
-                  font-family: var(--font-mono);
-                "
-              >
-                Idiomas
-              </p>
-              <p style="font-weight: 600; font-size: 14px; color: var(--text)">
-                ES (Nativo) / EN
               </p>
             </div>
           </div>
