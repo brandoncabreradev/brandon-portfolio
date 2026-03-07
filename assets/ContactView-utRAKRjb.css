@@ -1,0 +1,1 @@
+@media(min-width:768px){#contact-grid{grid-template-columns:1fr 1.4fr!important}#form-row{grid-template-columns:1fr 1fr!important}}@media(max-width:767px){#form-row{grid-template-columns:1fr!important}}@keyframes ping{75%,to{transform:scale(2);opacity:0}}
