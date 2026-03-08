@@ -13,8 +13,8 @@ const sent = ref(false);
 const contactLinks = [
   {
     label: "Email",
-    value: "b.cabrera2013@email.com",
-    href: "mailto:b.cabrera2013@email.com",
+    value: "b.cabrera2013@gmail.com",
+    href: "mailto:b.cabrera2013@gmail.com",
     icon: "✉",
     accent: "#6ee7b7",
   },
