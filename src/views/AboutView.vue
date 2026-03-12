@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import meImg from "@/assets/img/Me.png";
+import cvPdf from "@/assets/Document/CV BC.pdf";
 import { animate, inView, stagger } from "motion";
 
 const headerEl = ref(null);
@@ -331,7 +332,14 @@ onMounted(() => {
           </div>
 
           <div style="margin-top: 8px">
-            <a href="#" class="btn-secondary" style="display: inline-flex">
+            <a
+              :href="cvPdf"
+              class="btn-secondary"
+              style="display: inline-flex"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Brandon-Cabrera-CV.pdf"
+            >
               Descargar CV <span aria-hidden="true">↓</span>
             </a>
           </div>

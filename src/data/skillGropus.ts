@@ -18,10 +18,10 @@ export const skillGroups = [
     label: "Frontend",
     color: "#6ee7b7",
     skills: [
-      { name: "Vue.js", level: 90 },
-      { name: "JavaScript", level: 80 },
-      { name: "HTML / CSS", level: 92 },
-      { name: "Tailwind CSS", level: 80 },
+      { name: "Vue.js", level: 70 },
+      { name: "JavaScript", level: 70 },
+      { name: "HTML / CSS", level: 85 },
+      { name: "Tailwind CSS", level: 55 },
     ],
   },
   {
@@ -29,11 +29,11 @@ export const skillGroups = [
     label: "Backend",
     color: "#818cf8",
     skills: [
-      { name: "Node.js", level: 88 },
-      { name: "NestJS", level: 85 },
-      { name: "TypeScript", level: 80 },
-      { name: "REST APIs", level: 92 },
-      { name: "JWT / Auth", level: 88 },
+      { name: "Node.js", level: 75 },
+      { name: "NestJS", level: 90 },
+      { name: "TypeScript", level: 85 },
+      { name: "REST APIs", level: 65 },
+      { name: "JWT / Auth", level: 75 },
     ],
   },
   {
@@ -41,10 +41,10 @@ export const skillGroups = [
     label: "Bases de datos",
     color: "#fb923c",
     skills: [
-      { name: "MySQL", level: 85 },
-      { name: "PostgreSQL", level: 82 },
-      { name: "MongoDB", level: 72 },
-      { name: "Redis", level: 65 },
+      { name: "MySQL", level: 75 },
+      { name: "PostgreSQL", level: 60 },
+      { name: "MongoDB", level: 45 },
+      { name: "Redis", level: 50 },
     ],
   },
   {
@@ -52,10 +52,10 @@ export const skillGroups = [
     label: "DevOps & Herramientas",
     color: "#f472b6",
     skills: [
-      { name: "Git / GitHub", level: 90 },
-      { name: "Docker", level: 72 },
+      { name: "Git / GitHub", level: 70 },
+      { name: "Docker", level: 40 },
       { name: "AWS", level: 40 },
-      { name: "Chart.js", level: 75 },
+      { name: "Chart.js", level: 50 },
     ],
   },
 ];
