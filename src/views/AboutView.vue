@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import meImg from "@/assets/img/Me.png";
-import cvPdf from "@/assets/Document/CV BC.pdf";
+import cvPdf from "@/assets/Document/Brandon-Cabrera-CV.pdf";
 import { animate, inView, stagger } from "motion";
 
 const headerEl = ref(null);
