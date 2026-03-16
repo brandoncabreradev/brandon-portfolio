@@ -35,7 +35,14 @@ defineProps({
         v-if="project.image"
         :src="project.image"
         :alt="project.title"
-        style="width: 100%; height: 100%; object-fit: cover"
+        :style="{
+          width: '100%',
+          height: '100%',
+          objectFit:
+            project.title === 'Tu gimnasio en la palma de tu mano'
+              ? 'contain'
+              : 'cover',
+        }"
       />
       <span
         v-else

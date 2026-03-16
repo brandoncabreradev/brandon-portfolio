@@ -1,5 +1,5 @@
 import mayrrhh from "@/assets/img/MAYRRHH.png";
-
+import impulsoApp from "@/assets/img/Impulso.png";
 export interface Project {
   id: number;
   title: string;
@@ -24,6 +24,22 @@ export const projects: Project[] = [
     category: "fullstack",
     image: mayrrhh,
     liveUrl: "https://mayrrhh.com/",
+    repoUrl: null,
+    featured: true,
+    note: "Desarrollado como parte de mi trabajo en Mayfer Dev",
+    noteUrl: "https://mayfer.dev/en/home-2/",
+  },
+
+  {
+    id: 2,
+    title: "Tu gimnasio en la palma de tu mano",
+    description:
+      "Diseñada para complementar tu entrenamiento Fitness en Guatemala, esta aplicación te permite personalizar tus rutinas, monitorear tu progreso y acceder a recursos exclusivos desde tu dispositivo móvil.",
+    tags: ["Vue.js", "NestJS", "MySQL", "Expo", "Firebase"],
+    category: "fullstack",
+    image: impulsoApp,
+    liveUrl:
+      "https://play.google.com/store/apps/details?id=com.impulsofitness.app",
     repoUrl: null,
     featured: true,
     note: "Desarrollado como parte de mi trabajo en Mayfer Dev",
